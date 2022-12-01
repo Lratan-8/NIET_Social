@@ -1,0 +1,19 @@
+{
+  "name": "niet_social",
+  "version": "1.0.0",
+  "description": "social media website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lratan-8/NIET_Social.git"
+  },
+  "author": "Luv Ratan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lratan-8/NIET_Social/issues"
+  },
+  "homepage": "https://github.com/Lratan-8/NIET_Social#readme"
+}
