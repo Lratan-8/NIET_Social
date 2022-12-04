@@ -1,3 +1,4 @@
+const { application } = require("express");
 const express = require("express");
 const app = express();
 const port = 8000;
@@ -8,6 +9,12 @@ We need to tell our app that all the get, post delete will be handled by this mo
 //use express router
 //app.use is a middleware and before the server starts up, it needs to access routes
 app.use('/', require('./routes/index'));
+
+
+//setup the view engine
+
+app.set('view engine','ejs');
+app.set('views', './views');
 
 
 

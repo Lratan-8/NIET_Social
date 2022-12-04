@@ -5,7 +5,10 @@ Inside this file we will have different actions.*/
 
 
 module.exports.home = function(req,res){
-    return res.end('<h1>This is my first action from the home_controller</h1>')
+    // return res.end('<h1>This is my first action from the home_controller</h1>')
+    return res.render('home', {
+        title: "Home"
+    })
 };
 
 //now we need to access this funtion in routes

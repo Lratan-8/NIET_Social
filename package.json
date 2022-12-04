@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Lratan-8/NIET_Social#readme",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.2"
   }
 }
