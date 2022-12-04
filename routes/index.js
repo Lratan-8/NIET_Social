@@ -16,8 +16,14 @@ console.log("To check if the router's index.js file is loaded or not");
 
 
 //to access the controller action we will do -
-const homeController = require('../controllers/home_controller')
+const homeController = require('../controllers/home_controller');
 router.get('/', homeController.home);
+// //to access the other controllers here
+// const usersController = require('../controllers/users_controller');
+// router.use('/users', usersController.profile);
+router.use('/users', require('./users'))
+//for any other route, we will access it from here
+//router.use('/route-name', importedController.action)
 
 
 //we are going to export this to use in app's index.js
