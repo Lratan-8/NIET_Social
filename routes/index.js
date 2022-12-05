@@ -18,10 +18,16 @@ console.log("To check if the router's index.js file is loaded or not");
 //to access the controller action we will do -
 const homeController = require('../controllers/home_controller');
 router.get('/', homeController.home);
+
+
 // //to access the other controllers here
-// const usersController = require('../controllers/users_controller');
-// router.use('/users', usersController.profile);
-router.use('/users', require('./users'))
+/*since this users route is already created, we don't need to create it. 
+Because we have it in users.js */
+//We just need to use it in index.js with the given URL
+router.use('/users', require('./users')); 
+
+/*NOW THIS /USERS IS ACTUALLY EQUAL TO / WITH RESPECT TO ALL THE OTHER 
+URL WHICH HAS USERS AS IT'S PARENT, EG - /USERS/PROFILE, /USERS/EDIT */
 //for any other route, we will access it from here
 //router.use('/route-name', importedController.action)
 
