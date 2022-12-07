@@ -2,6 +2,9 @@ const { application } = require("express");
 const express = require("express");
 const app = express();
 const port = 8000;
+const expressLayout = require('express-ejs-layouts');
+
+app.use(expressLayout);
 
 
 /*now that we have exported our router, now we have to tell our app to use it.
