@@ -2,6 +2,7 @@ const { application } = require("express");
 const express = require("express");
 const app = express();
 const port = 8000;
+const db = require('./config/mongoose');
 
 const expressLayout = require('express-ejs-layouts');
 //we need to require express layout to access partials and layouts
