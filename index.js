@@ -2,10 +2,17 @@ const { application } = require("express");
 const express = require("express");
 const app = express();
 const port = 8000;
-const expressLayout = require('express-ejs-layouts');
 
+const expressLayout = require('express-ejs-layouts');
+//we need to require express layout to access partials and layouts
 app.use(expressLayout);
 
+//extract style and scripts from subpages into the layout
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
+
+//We need to use this middleware to access static files.
+app.use('/',express.static('./assets'));
 
 /*now that we have exported our router, now we have to tell our app to use it.
 We need to tell our app that all the get, post delete will be handled by this module now.*/
