@@ -9,3 +9,13 @@ module.exports.profile = function(req,res){
 
 };
 
+module.exports.createAccount = function(req,res){
+    return res.render('signup');
+};
+
+module.exports.login = function(req,res){
+    return res.render('signin');
+};
+
+
+

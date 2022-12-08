@@ -15,8 +15,14 @@ router.get('/profile', usersController.profile);
 const postsController = require('../controllers/posts_controller');
 router.get('/allposts', postsController.usersPosts);
 
+//router 3 of users
+
+router.get('/signup', usersController.createAccount);
 
 
+//router 4 of users
+
+router.get('/login', usersController.login);
 
 
 
