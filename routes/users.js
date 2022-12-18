@@ -22,7 +22,7 @@ router.get('/signup', usersController.createAccount);
 
 //router 4 of users
 
-router.get('/login', usersController.login);
+router.get('/signin', usersController.login);
 
 
 
