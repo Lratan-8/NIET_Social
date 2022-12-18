@@ -18,6 +18,7 @@ router.get('/allposts', postsController.usersPosts);
 //router 3 of users
 
 router.get('/signup', usersController.createAccount);
+router.post('/create',usersController.create);
 
 
 //router 4 of users
